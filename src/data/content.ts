@@ -99,7 +99,6 @@ export type Project = {
   points: string[];
   tags: string[];
   /** Real hosted URL — replace the "#" placeholders with live links. */
-  href: string;
   /** Accent pair used to render the placeholder thumbnail until a real screenshot is dropped in public/images/projects/. */
   thumb: { from: string; to: string; initials: string };
   image: string;
