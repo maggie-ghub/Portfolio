@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { profile } from "@/data/content";
 import { GitHubIcon, LinkedInIcon, MailIcon } from "./icons";
+import Link from "next/link";
 
 const sections = [
   { id: "about", label: "About" },
@@ -39,10 +40,11 @@ export default function SideNav() {
   return (
     <header className="lg:sticky lg:top-0 lg:h-screen lg:w-[340px] lg:shrink-0 flex flex-col justify-between px-6 py-10 lg:px-12 lg:py-16">
       <div>
-        
-        <h1 href="#top" className="font-display mt-6 text-[2rem] leading-[1.05] font-semibold text-[var(--paper)]">
-          {profile.name}
-        </h1>
+        <Link href="#top">
+          <h1 className="font-display mt-6 text-[2rem] leading-[1.05] font-semibold text-[var(--paper)]">
+            {profile.name}
+          </h1>
+        </Link>
         <p className="mt-2 text-[1.05rem] font-medium" style={{ color: "var(--brass)" }}>
           {profile.role}
         </p>
