@@ -4,7 +4,6 @@ import { projects } from "@/data/content";
 import { ArrowUpRight } from "./icons";
 import { useHoverSpotlight } from "./useHoverSpotlight";
 import Image from 'next/image';
-import {dms} from "@/public/projects/dms.png";
 
 export default function Projects() {
   const { hovered, bind } = useHoverSpotlight<string>();
